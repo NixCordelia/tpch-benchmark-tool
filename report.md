@@ -47,11 +47,11 @@ config.yaml
 
 ### 3.1 测试环境
 
-- 操作系统：Windows 10
+- 操作系统：Windows 11
 - 数据库：PostgreSQL 15（Docker 容器 `tpch-postgres`）
 - 数据规模：TPC-H SF=1（约 1GB）
 - SQL：`sql/1.sql` … `sql/22.sql`
-- `lineitem` 上已有索引 `idx_lineitem_combo (l_partkey, l_suppkey, l_shipdate)`
+- `lineitem` 上已建索引 `idx_lineitem_combo (l_partkey, l_suppkey, l_shipdate)`
 
 ### 3.2 分阶段执行
 
