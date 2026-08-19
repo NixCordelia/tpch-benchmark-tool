@@ -1,0 +1,21 @@
+# 仅拉起 PostgreSQL 15（容器名 tpch-postgres）。数据在 named volume tpch-data。
+# 密码来自 .env（先 copy .env.example .env 再修改）。
+# MatrixDB 不在本文件里：用已有容器 docker start mxdemo，端口映射 5433:5432。
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: tpch-postgres
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - tpch-data:/var/lib/postgresql/data
+
+volumes:
+  tpch-data:

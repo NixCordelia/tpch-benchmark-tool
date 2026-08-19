@@ -1,0 +1,33 @@
+# 配置示例。复制为 config.yaml 后填写 password，勿把填好的文件推进公开仓库。
+# 测试参数与 README / report.md 中的 PostgreSQL 自动化实测一致。
+# 双库对比请复制 config.compare.example.yaml 为 config.compare.yaml。
+
+database:
+  host: localhost
+  port: 5432
+  user: tpch
+  password: "YOUR_PASSWORD"
+  database: tpch
+  # 连接后应用到会话的数据库参数（题目要求的「不同数据库参数设置」）
+  session_params:
+    work_mem: "256MB"
+    jit: "off"
+
+test:
+  sql_dir: ./sql          # SQL 文件目录
+  rounds: 3               # 测试轮数（自动化实测）
+  concurrency: 2          # 并发数（自动化实测；干净单条耗时请改为 1）
+  warmup: false           # 是否先跑一轮不计时（自动化实测为 false）
+  timeout: 300            # 单条 SQL 超时（秒）；0 表示不限制。补测 Q17/Q20/Q21 时用 0
+
+compare:
+  enabled: false          # 是否启用两库对比（如 PostgreSQL vs YMatrix）
+  target:
+    host: localhost
+    port: 5433
+    user: YOUR_TARGET_USER
+    password: "YOUR_PASSWORD"
+    database: tpch
+    session_params:
+      work_mem: "256MB"
+      jit: "off"

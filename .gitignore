@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+config.yaml
+config.compare.yaml
+*.log
+.DS_Store
+Thumbs.db
+data/tbl/
+*.tbl

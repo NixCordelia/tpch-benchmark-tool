@@ -1,0 +1,8 @@
+# PostgreSQL 连接
+psycopg2-binary>=2.9.9
+
+# YAML 配置文件解析
+PyYAML>=6.0.2
+
+# 统计计算
+numpy>=2.0.0
