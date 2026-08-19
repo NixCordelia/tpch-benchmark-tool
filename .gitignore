@@ -5,6 +5,7 @@ venv/
 .env
 config.yaml
 config.compare.yaml
+design_decision.md
 *.log
 .DS_Store
 Thumbs.db

@@ -13,7 +13,6 @@ tpch-benchmark-tool/
 ├── README.md                 # 本文件（题目第三节）
 ├── report.md                 # 作业书面报告（方案 / 过程 / 结果 / 风险）
 ├── ai_usage.md               # AI 使用说明
-├── design_decision.md        # 核心目标、关键判断、验证场景
 ├── config.example.yaml       # 配置示例（密码为占位符）
 ├── config.compare.example.yaml
 ├── .env.example              # Docker 环境变量示例
@@ -28,7 +27,7 @@ tpch-benchmark-tool/
 └── screenshots/              # 运行截图（run-success / report-top5 / docker-restart / compare-run）
 ```
 
-对应题目第三节建议的 `src/`（兼 `scripts/`）、`sql/`、`data/`、`results/`。根目录保留 `README.md`、`report.md`、`ai_usage.md`、`config.example.yaml`。`design_decision.md` 为额外要求。必须在项目根执行 `python main.py`。
+对应题目第三节建议的 `src/`（兼 `scripts/`）、`sql/`、`data/`、`results/`。根目录保留 `README.md`、`report.md`、`ai_usage.md`、`config.example.yaml`。必须在项目根执行 `python main.py`。
 
 ## 环境依赖
 
@@ -146,7 +145,7 @@ python main.py --config config.compare.yaml
 | 4    | 2        | 117451.29   | 119594.42   | 100.00%      |
 | 5    | 18       | 6258.40     | 6393.29     | 100.00%      |
 
-双库对比表见 [results/compare_report.md](results/compare_report.md)。作业书面报告见 [report.md](report.md)，判断与验证见 [design_decision.md](design_decision.md)。
+双库对比表见 [results/compare_report.md](results/compare_report.md)。作业书面报告见 [report.md](report.md)。
 
 ## 运行截图
 
