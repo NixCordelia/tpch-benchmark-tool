@@ -27,7 +27,7 @@ tpch-benchmark-tool/
 └── screenshots/              # 运行截图（run-success / report-top5 / docker-restart / compare-run）
 ```
 
-对应题目第三节建议的 `src/`（兼 `scripts/`）、`sql/`、`data/`、`results/`。根目录保留 `README.md`、`report.md`、`ai_usage.md`、`config.example.yaml`。必须在项目根执行 `python main.py`。
+采用建议的 `src/`（兼 `scripts/`）、`sql/`、`data/`、`results/`。根目录保留 `README.md`、`report.md`、`ai_usage.md`、`config.example.yaml`。必须在项目根执行 `python main.py`。
 
 ## 环境依赖
 
@@ -48,7 +48,7 @@ copy .env.example .env
 copy config.example.yaml config.yaml
 ```
 
-编辑 `.env` 与 `config.yaml` 中的密码（二者需一致）。`config.yaml` / `config.compare.yaml` / `.env` 已加入 `.gitignore`，不要推进公开仓库。
+编辑 `.env` 与 `config.yaml` 中的密码（二者需一致）。
 
 启动示例数据库：
 
