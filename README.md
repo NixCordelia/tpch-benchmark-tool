@@ -42,7 +42,7 @@ Python 包见 `requirements.txt`：`psycopg2-binary`、`PyYAML`、`numpy`。
 ## 安装步骤
 
 ```bash
-git clone <your-repo>
+git clone https://github.com/NixCordelia/tpch-benchmark-tool.git
 cd tpch-benchmark-tool
 pip install -r requirements.txt
 copy .env.example .env
